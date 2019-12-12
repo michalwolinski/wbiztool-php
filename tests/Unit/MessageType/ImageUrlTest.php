@@ -4,6 +4,7 @@
 namespace Tests\Unit\MessageType;
 
 
+use Haxmedia\WbizTool\Enum\Type;
 use Haxmedia\WbizTool\MessageType\ImageUrl;
 use Haxmedia\WbizTool\MessageType\MessageType;
 use Tests\TestCase;
@@ -20,7 +21,7 @@ class ImageUrlTest extends TestCase
     {
         $message = 'Test message';
         $url     = 'https://example.com/Image.jpg';
-        $type    = 1;
+        $type    = Type::IMAGE;
 
         $messageType = new ImageUrl($message, $url);
 

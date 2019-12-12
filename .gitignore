@@ -109,3 +109,5 @@ composer.phar
 
 .phpunit.result.cache
 .idea
+
+./example.php

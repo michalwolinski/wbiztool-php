@@ -5,17 +5,18 @@ namespace Haxmedia\WbizTool\Method;
 
 
 use Carbon\Carbon;
+use Haxmedia\WbizTool\Enum\Action;
 
 /**
  * Class ScheduleMessage
  * @package Haxmedia\WbizTool\Method
  */
-class ScheduleMessage extends AbstractMethod
+class ScheduleMessage extends Method
 {
     /**
      * @var string
      */
-    protected string $action = 'schedule_msg';
+    protected string $action = Action::SCHEDULE_MESSAGE;
 
     /**
      * @var array

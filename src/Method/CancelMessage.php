@@ -4,18 +4,18 @@
 namespace Haxmedia\WbizTool\Method;
 
 
-use Carbon\Carbon;
+use Haxmedia\WbizTool\Enum\Action;
 
 /**
  * Class CancelMessage
  * @package Haxmedia\WbizTool\Method
  */
-class CancelMessage extends AbstractMethod
+class CancelMessage extends Method
 {
     /**
      * @var string
      */
-    protected string $action = 'cancel_msg';
+    protected string $action = Action::CANCEL_MESSAGE;
 
     /**
      * @var array

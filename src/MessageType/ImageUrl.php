@@ -4,17 +4,19 @@
 namespace Haxmedia\WbizTool\MessageType;
 
 
+use Haxmedia\WbizTool\Enum\Type;
+
 /**
  * Class ImageUrl
  * @package Haxmedia\WbizTool\MessageType
  */
-class ImageUrl extends AbstractMessageType
+class ImageUrl extends MessageType
 {
 
     /**
      * @var int
      */
-    protected int $messageType = 1;
+    protected int $messageType = Type::IMAGE;
     /**
      * @var string
      */

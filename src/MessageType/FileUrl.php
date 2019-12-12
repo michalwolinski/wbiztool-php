@@ -4,17 +4,19 @@
 namespace Haxmedia\WbizTool\MessageType;
 
 
+use Haxmedia\WbizTool\Enum\Type;
+
 /**
  * Class FileUrl
  * @package Haxmedia\WbizTool\MessageType
  */
-class FileUrl extends AbstractMessageType
+class FileUrl extends MessageType
 {
 
     /**
      * @var int
      */
-    protected int $messageType = 2;
+    protected int $messageType = Type::FILE;
     /**
      * @var string
      */

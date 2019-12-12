@@ -4,6 +4,7 @@
 namespace Tests\Unit\MessageType;
 
 
+use Haxmedia\WbizTool\Enum\Type;
 use Haxmedia\WbizTool\MessageType\FileUrl;
 use Haxmedia\WbizTool\MessageType\MessageType;
 use Tests\TestCase;
@@ -21,7 +22,7 @@ class FileUrlTest extends TestCase
         $message = 'Test message';
         $url     = 'https://example.com/Documents.zip';
         $name    = 'Documents.zip';
-        $type    = 2;
+        $type    = Type::FILE;
 
         $messageType = new FileUrl($message, $url, $name);
 

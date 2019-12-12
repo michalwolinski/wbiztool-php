@@ -4,6 +4,7 @@
 namespace Tests\Unit\MessageType;
 
 
+use Haxmedia\WbizTool\Enum\Type;
 use Haxmedia\WbizTool\MessageType\MessageType;
 use Haxmedia\WbizTool\MessageType\Text;
 use Tests\TestCase;
@@ -19,7 +20,7 @@ class TextTest extends TestCase
     public function is_message_type_valid()
     {
         $message = 'Test message';
-        $type    = 0;
+        $type    = Type::TEXT;
 
         $messageType = new Text($message);
 
